@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayudante de Santa - Juego 3D</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Cargar Babylon.js desde CDN -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <h1>🎅 Ayudante de Santa</h1>
+            <div id="instructions">
+                <p><strong>Controles:</strong></p>
+                <p>WASD - Mover al elfo</p>
+                <p>ESPACIO - Recoger/Entregar regalo</p>
+            </div>
+            <div id="status">
+                <p>Estado: <span id="game-status">Busca un regalo en el taller</span></p>
+                <p>Regalos entregados: <span id="gift-count">0</span></p>
+            </div>
+        </div>
+        <canvas id="renderCanvas"></canvas>
+    </div>
+    
+    <!-- Cargar el script principal del juego -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
